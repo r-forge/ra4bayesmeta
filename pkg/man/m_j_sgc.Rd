@@ -2,13 +2,13 @@
 \alias{m_j_sgc}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Optimization function for the SGC(m) prior: Approximate Jeffreys' reference posterior
+Optimization function for the SGC(m) prior: Approximate Jeffreys reference posterior
 %%  ~~function to do ... ~~
 }
 \description{
   Numerically determines the parameter value \eqn{m=m_J} of the SGC(\eqn{m}) prior,
 such that the Hellinger distance between the marginal posteriors for the heterogeneity
-standard deviation \eqn{\tau} induced by the SGC(\eqn{m_J}) and Jeffreys' (improper) reference prior
+standard deviation \eqn{\tau} induced by the SGC(\eqn{m_J}) and Jeffreys (improper) reference prior
 is minimal.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

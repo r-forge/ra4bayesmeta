@@ -8,7 +8,7 @@ Optimization function for the SIGC(m) prior: Approximate Jeffreys reference post
 \description{
   Numerically determines the parameter value \eqn{M=M_J} of the SIGC(\eqn{M}) prior,
 such that the Hellinger distance between the marginal posteriors for the heterogeneity
-standard deviation \eqn{\tau} induced by the SIGC(\eqn{M_J}) prior and Jeffreys' (improper) reference prior
+standard deviation \eqn{\tau} induced by the SIGC(\eqn{M_J}) prior and Jeffreys (improper) reference prior
 is minimal.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }

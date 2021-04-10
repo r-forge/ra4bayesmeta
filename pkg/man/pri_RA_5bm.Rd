@@ -33,13 +33,13 @@ pri_RA_5bm(df, tau.prior=list(function(x) dhalfnormal(x, scale=1)),
 %}
 \item{m_J}{
     parameter value \eqn{m=m_J} of the SGC(\eqn{m}) prior,
-    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys' reference posterior (wrt the Hellinger distance).
+    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys reference posterior (wrt the Hellinger distance).
     If set to \code{NA} (the default), this parameter is computed 
     using the function \code{m_j_sgc} and some other parameters.
 }
 \item{M_J}{
     parameter value \eqn{M=M_J} of the SIGC(\eqn{M}) prior,
-    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys' reference posterior (wrt the Hellinger distance).
+    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys reference posterior (wrt the Hellinger distance).
     If set to \code{NA} (the default), this parameter is computed 
     using the function \code{M_j_sigc} and some other parameters.
 }

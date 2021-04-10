@@ -40,7 +40,7 @@ fit_models_RA_5bm(df, tau.prior=list(), compute.J.bm=TRUE,
 }
 \item{m_J}{
     parameter value \eqn{m=m_J} of the SGC(\eqn{m}) prior,
-    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys' reference posterior (wrt the Hellinger distance).
+    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys reference posterior (wrt the Hellinger distance).
     If set to \code{NA} (the default), this parameter is computed 
     using the function \code{m_j_sgc} and the arguments
     \code{df}, \code{upper.J}, \code{digits.J}, \code{mu.mean} and \code{mu.sd}.
@@ -48,7 +48,7 @@ fit_models_RA_5bm(df, tau.prior=list(), compute.J.bm=TRUE,
 }
 \item{M_J}{
     parameter value \eqn{M=M_J} of the SIGC(\eqn{M}) prior,
-    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys' reference posterior (wrt the Hellinger distance).
+    which induces a marignal posterior for the heterogeneity standard deviation tau   close to Jeffreys reference posterior (wrt the Hellinger distance).
     If set to \code{NA} (the default), this parameter is computed 
     using the function \code{M_j_sigc} and the arguments
     \code{df}, \code{upper.J}, \code{digits.J}, \code{mu.mean} and \code{mu.sd}.
@@ -129,7 +129,7 @@ in the following order:
 \item{fit.SIGC.M_J }{ for SIGC(\code{M_J}) benchmark prior}
 \item{fit.SGC.m_J }{ for SGC(\code{m_J}) benchmark prior}
 \item{fit.SIGC.M_inf }{ for SIGC(\code{M_inf}) benchmark prior}
-\item{fit.j }{ for Jeffreys' (improper) reference prior}
+\item{fit.j }{ for Jeffreys (improper) reference prior}
 \item{fit.actual_1 }{ for the first prior in the list \code{tau.prior} (if specified)}
 \item{fit.actual_2 }{ for the second prior in the list \code{tau.prior} (if specified)}
 \item{...}{ ...}
