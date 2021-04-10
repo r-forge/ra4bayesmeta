@@ -73,9 +73,9 @@ denotes the parameter of interest in the NNHM,
 where \eqn{\theta_{i}} is the random effect in the \eqn{i}th study and
 \eqn{\theta_{new}} the predicted effect for a new study.
 
-Note that Jeffreys' reference posterior \eqn{po_{J}} is proper if
+Note that Jeffreys reference posterior \eqn{po_{J}} is proper if
 there are at least two studies in the meta-analysis data set.
-It is based on the improper Jeffreys' reference prior,
+It is based on the improper Jeffreys reference prior,
 which is minimally informative given the data.
 
 If integral-based computation (\code{H.dist.method = "integral"}) of Hellinger distances is selected (the default), numerical integration is applied to obtain the Hellinger distance between the two marginal posterior densities (by using the function \code{H}).
@@ -104,7 +104,7 @@ between two marginal posteriors (for the parameter of interest \eqn{\Psi} varyin
 induced by the following two heterogeneity priors
 (from left to right):
 \item{H(po_{m_inf}, po_act) }{ benchmark prior SGC(m_inf) and actual prior}
-\item{H(po_J, po_act) }{ Jeffreys' reference prior \eqn{\pi_J} and actual prior}
+\item{H(po_J, po_act) }{ Jeffreys reference prior \eqn{\pi_J} and actual prior}
 \item{H(po_{M_inf}, po_act) }{ benchmark prior SIGC(M_inf) and actual prior}
 The actual heterogenity prior and the parameter of interest \eqn{\Psi} vary
 with the rows in the following order:

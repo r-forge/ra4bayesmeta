@@ -5,12 +5,10 @@
 \packageTitle{ra4bayesmeta}
 }
 \description{
-%TODO: add notation for different priors/posteriors?
 Functionality for performing a principled reference analysis in the Bayesian normal-normal hierarchical model (NNHM) used for Bayesian meta-analysis. 
 Focuses on the choice of the prior for the between-study (heterogeneity) standard deviation \eqn{\tau}.
 Implements the methodology proposed in Ott et al. (2021).
 
-% TODO: decribe RA at posterior and prior level
 The posterior reference analysis applies the Hellinger distance 
 to quantify the informativeness
 of an actual heterogeneity prior of interest by
@@ -25,10 +23,11 @@ computing its Hellinger distance to prior benchmarks.
 The main posterior benchmark used is Jeffreys reference posterior
 induced by a minimally informative improper reference prior (denoted by J) for the heterogeneity.
 Two alternative proposals for additional posterior benchmarks are implemented.
-The first, simpler proposal is described in Ott et al. (2021) and uses a benchmark induced by a conservative half-normal heterogeneity prior (denoted by HN0).
-This benchmark allows us to discriminate between conservative and anti-conservative heterogeneity priors with respect to the reference prior.
+The first, simpler proposal is described in Ott et al. (2021) and uses a benchmark induced by 
+an anti-conservative half-normal heterogeneity prior (denoted by HN0).
+This benchmark allows us to discriminate between anti-conservative and conservative heterogeneity priors with respect to the reference prior.
 The second, more involved proposal is introduced in the Supplementary Material of Ott et al. (2021) and uses up to four additional benchmarks induced by proper priors.
-These benchmarks allow us to discriminate between strongly conservative, reference affine, and strongly anti-conservative heterogeneity priors.
+These benchmarks allow us to discriminate between strongly anti-conservative, reference affine, and strongly conservative heterogeneity priors.
 All four benchmark priors belong to two closely related parametric families, the 
 so-called "square-root generalized conventional" (SGC) and
 "inverse square-root generalized conventional" (SIGC) distributions,
@@ -36,7 +35,7 @@ which are derived from prior distributions for variance components
 described in Berger & Deely (1988).
 Note that most of these prior benchmarks also depend on the data set considered.
 
-Functions which implement this second proposal use 3 benchmarks for the posterior reference analysis (Jeffreys reference posterior and two additional benchmarks induced by a highly conservative heterogeneity prior SGC(\eqn{m_{inf}}) and a highly anti-conservative heterogeneity prior SIGC(\eqn{M_{inf}}), respectively) and 5 benchmarks for the prior reference analysis (Jeffreys reference prior and 4 proper priors) and have a corresponding suffix \code{_3bm} or \code{_5bm}.
+Functions which implement this second proposal use 3 benchmarks for the posterior reference analysis (Jeffreys reference posterior and two additional benchmarks induced by a highly anti-conservative heterogeneity prior SGC(\eqn{m_{inf}}) and a highly conservative heterogeneity prior SIGC(\eqn{M_{inf}}), respectively) and 5 benchmarks for the prior reference analysis (Jeffreys reference prior and 4 proper priors) and have a corresponding suffix \code{_3bm} or \code{_5bm}.
 The corresponding functions without such a suffix implement the first proposal based on 2 heterogeneity benchmark priors (the half-normal and Jeffreys reference prior).
 
 
@@ -80,9 +79,9 @@ Type: Package
 
 Title: Reference analysis for Bayesian meta-analysis
 
-Version: 1.0-3
+Version: 1.0-4
 
-Date: 2021-02-13
+Date: 2021-04-10
 
 Author: Manuela Ott [aut, cre], Malgorzata Roos [aut] 
 

@@ -53,7 +53,7 @@ post_RA(df, tau.prior = list(function(x) dhalfnormal(x, scale = 1)),
 }
 \item{scale.hn0}{
   scale parameter of the half-normal benchmark prior (usually a small number to 
-  obtain a conservative benchmark which has most of its probability mass close to 0).
+  obtain an anti-conservative benchmark which has most of its probability mass close to 0).
   Defaults to 0.002.
 }
 \item{mu.mean}{
@@ -76,17 +76,17 @@ For the overall mean parameter \eqn{\mu},
 we additionally consider the fixed-effects model benchmark
 \eqn{po_{FE}(\mu)}.
 
-Note that Jeffreys' reference posterior \eqn{po_{J}} is proper if
+Note that Jeffreys reference posterior \eqn{po_{J}} is proper if
 there are at least two studies in the meta-analysis data set.
-It is based on the improper Jeffreys' reference prior,
+It is based on the improper Jeffreys reference prior,
 which is minimally informative given the data.
 The computation of the informativeness values is described in 
 Ott et al. (2021, Section 3.6).
 
 The absolute value of the signed informativeness quantifies how close the 
 actual posterior and the reference posterior \eqn{po_{J}} are.
-If the signed informativeness is negative, then the actual prior is conservative  with respect to Jeffreys reference prior J (that is puts more weight on smaller values for \eqn{\tau} than J).
-If the signed informativeness is positive, then the actual prior is anti-conservative  with respect to Jeffreys reference prior J (that is puts more weight on larger values for \eqn{\tau} than J).
+If the signed informativeness is negative, then the actual prior is anti-conservative  with respect to Jeffreys reference prior J (that is puts more weight on smaller values for \eqn{\tau} than J).
+If the signed informativeness is positive, then the actual prior is conservative  with respect to Jeffreys reference prior J (that is puts more weight on larger values for \eqn{\tau} than J).
 
 If integral-based computation (\code{H.dist.method = "integral"}) of Hellinger distances is selected (the default), numerical integration is applied to obtain the Hellinger distance between the two marginal posterior densities (by using the function \code{H}).
 If moment-based computation (\code{H.dist.method = "moment"}) is selected, the marginal densities are first approximated by normal densities with the same means and standard deviations and then the Hellinger distance between these normal densities can be obtained by an analytical formula (implemented in the function \code{H_normal}).

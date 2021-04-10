@@ -77,7 +77,7 @@ plot_RA(df, tau.prior = list(),
 }
 \item{scale.hn0}{
   scale parameter of the half-normal benchmark prior (usually a small number to 
-  obtain a conservative benchmark which has most of its probability mass close to 0).
+  obtain an anti-conservative benchmark which has most of its probability mass close to 0).
   Defaults to 0.002.
 }
 \item{mu.mean}{
