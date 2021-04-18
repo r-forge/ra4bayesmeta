@@ -64,9 +64,11 @@ the optimal parameter value may be larger than \code{upper}.
 }
 \examples{
 # for aurigular acupuncture (AA) data set
-# warning: it takes ca. 2 min. to run this function
 data(aa)
+\dontrun{
+# warning: it takes ca. 2 min. to run this function
 M_j_sigc(df=aa, digits=1)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

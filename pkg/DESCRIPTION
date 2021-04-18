@@ -1,10 +1,14 @@
 Package: ra4bayesmeta
 Type: Package
-Title: Reference analysis for Bayesian meta-analysis 
-Version: 1.0-4
-Date: 2021-04-10
+Title: Reference Analysis for Bayesian Meta-Analysis 
+Version: 1.0-5
+Date: 2021-04-18
+Authors@R: c(person("Manuela", "Ott", role = c("aut", "cre"),
+                     email = "manuela.c.ott@gmail.com"),
+              person("Malgorzata", "Roos", role = "aut")
+	    )
 Author: Manuela Ott [aut, cre], Malgorzata Roos [aut]
 Maintainer: Manuela Ott <manuela.c.ott@gmail.com>
-Description: Functionality for performing a principled reference analysis in the Bayesian normal-normal hierarchical model (NNHM) used for Bayesian meta-analysis. Computes a reference posterior, induced by a minimally informative improper reference prior for the between-study (heterogeneity) standard deviation. Determines additional proper anti-conservative (and conservative) prior benchmarks. Includes functions for reference analyses at both the posterior and the prior level, which, given the data, quantify the informativeness of a heterogeneity prior of interest relative to the minimally informative reference prior and the proper prior benchmarks. The functions operate on data sets which are compatible with the bayesmeta R package on CRAN.
+Description: Functionality for performing a principled reference analysis in the Bayesian normal-normal hierarchical model (NNHM) used for Bayesian meta-analysis. Computes a reference posterior, induced by a minimally informative improper reference prior for the between-study (heterogeneity) standard deviation. Determines additional proper anti-conservative (and conservative) prior benchmarks. Includes functions for reference analyses at both the posterior and the prior level, which, given the data, quantify the informativeness of a heterogeneity prior of interest relative to the minimally informative reference prior and the proper prior benchmarks. The functions operate on data sets which are compatible with the 'bayesmeta' package on CRAN.
 Depends: bayesmeta, R (>= 3.5.0)
 License: GPL (>=2)

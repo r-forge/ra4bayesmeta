@@ -172,8 +172,16 @@ in the \code{bayesmeta} function.
 # for aurigular acupuncture (AA) data set with one
 # actual half-normal and the "DuMouchel" heterogeneity prior
 data(aa)
+\dontrun{
+# warning: it takes ca. 7 min. to run this function
 fit_models_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
-                                    "DuMouchel"))
+                                        "DuMouchel"))
+                                    
+# computation is much faster if m_J and M_J are specified
+fit_models_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
+                                        "DuMouchel"),
+                  m_J = 1.35, M_J = 1.3)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

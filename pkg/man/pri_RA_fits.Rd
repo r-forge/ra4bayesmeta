@@ -76,8 +76,10 @@ Bayesian meta-analysis. Manuscript revised for \emph{Statistics in Medicine}. 20
 \examples{
 # for aurigular acupuncture (AA) data set 
 data(aa)
+\dontrun{
 # compute the model fits
 # two actual half-normal heterogeneity priors
+# warning: it takes ca. 7 min. to run this function
 fits <- fit_models_RA_5bm(df=aa, tau.prior=
                                  list(function(t)dhalfnormal(t, scale=0.5),
                                       function(t)dhalfnormal(t, scale=1)))[[1]]
@@ -85,7 +87,9 @@ fits <- fit_models_RA_5bm(df=aa, tau.prior=
 fits.bm.pri <- fits[1:4]
 # actual fits under HN priors
 fits.actual <- fits[c(6,7)]
+# prior reference analysis
 pri_RA_fits(fits.actual=fits.actual, fits.bm=fits.bm.pri)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
