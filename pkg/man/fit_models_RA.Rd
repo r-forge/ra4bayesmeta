@@ -105,11 +105,16 @@ for the anti-conservative benchmark prior.
 \code{\link{fit_models_RA_5bm}}
 }
 \examples{
-# for aurigular acupuncture (AA) data set with one
-# actual half-normal and the "DuMouchel" heterogeneity prior
+# for aurigular acupuncture (AA) data set 
 data(aa)
-fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
+# one actual half-normal prior
+fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1)))
+\dontrun{
+# it takes a few seconds to run this function
+# one actual half-normal and the "DuMouchel" heterogeneity prior
+fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=0.5),
                                     "DuMouchel"))
+                                    }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

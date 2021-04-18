@@ -122,6 +122,8 @@ Bayesian meta-analysis. Manuscript revised for \emph{Statistics in Medicine}. 20
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
+\dontrun{
+# it takes a few seconds to run each of the following functions
 # prior densities
 plot_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                               function(t)dhalfcauchy(t, scale=1)),
@@ -130,9 +132,10 @@ plot_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
           
 # marginal posterior for the effect mu
 plot_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
-                                  function(t)dhalfcauchy(t, scale=1)),
+                              function(t)dhalfcauchy(t, scale=1)),
         type="post.mu", xlim=c(-1.5,2), ylim=c(0,3), legend=TRUE,
-        legend.tau.prior=c("HN(1)", "HC(1)"))         
+        legend.tau.prior=c("HN(1)", "HC(1)"))   
+        }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

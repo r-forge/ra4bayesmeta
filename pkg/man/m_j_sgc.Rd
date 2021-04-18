@@ -59,9 +59,11 @@ is \code{digits=2} and even longer for higher precision.
 }
 \examples{
 # for aurigular acupuncture (AA) data set
-# warning: it takes ca. 2 min. to run this function
 data(aa)
+\dontrun{
+# warning: it takes ca. 2 min. to run this function
 m_j_sgc(df=aa, digits=1)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

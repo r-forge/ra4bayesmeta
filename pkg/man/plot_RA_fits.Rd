@@ -136,6 +136,7 @@ Bayesian meta-analysis. Revised for \emph{Statistics in Medicine}. 2021.
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
+\dontrun{
 # compute the model fits
 fits <- fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                             function(t)dhalfcauchy(t, scale=1)))
@@ -156,7 +157,8 @@ plot_RA_fits(fits.actual=fits.actual, fits.bm=fits.bm.post,
              type="post.mu", xlim=c(-1.5, 1.5), ylim=c(0, 3),
              legend=TRUE,
              legend.tau.prior=c("HN(1)", "HC(1)",
-             "HN0", "J"))      
+             "HN0", "J"))  
+             }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

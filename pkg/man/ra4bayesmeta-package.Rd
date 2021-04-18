@@ -77,11 +77,11 @@ Package: ra4bayesmeta
 
 Type: Package
 
-Title: Reference analysis for Bayesian meta-analysis
+Title: Reference Analysis for Bayesian Meta-Analysis
 
-Version: 1.0-4
+Version: 1.0-5
 
-Date: 2021-04-10
+Date: 2021-04-18
 
 Author: Manuela Ott [aut, cre], Malgorzata Roos [aut] 
 
@@ -126,6 +126,8 @@ American Statistical Association} \bold{83(402)}, 364--373.
 # auricular acupuncture (AA) data set
 data(aa)
 
+\dontrun{
+# it takes several seconds to run each of the following functions
 # posterior reference analysis
 # for standard HN and HC heterogeneity priors
 # using the HN0 and J benchmarks
@@ -139,6 +141,7 @@ post_RA(df=aa, tau.prior=
 post_RA_3bm(df=aa, tau.prior=
                    list(function(t)dhalfnormal(t, scale=1),
                         function(t)dhalfcauchy(t, scale=1)))
+                       
           
 # plot the marginal posteriors for the effect mu
 # using the HN0 and J benchmarks
@@ -147,4 +150,5 @@ plot_RA(df=aa, tau.prior=
                     function(t)dhalfcauchy(t, scale=1)),
         type="post.mu", xlim=c(-1,1.5), ylim=c(0,2.5),
         legend=TRUE, legend.tau.prior=c("HN(1)", "HC(1)"))   
+         }
 }

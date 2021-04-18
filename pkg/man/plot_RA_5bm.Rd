@@ -175,17 +175,22 @@ used for computation of the marginal posteriors.
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
+\dontrun{
 # prior densities
+# warning: it takes ca. 8 min. to run this function
+# (computation is much faster if m_J and M_J are specified)
 plot_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                   function(t)dhalfcauchy(t, scale=1)),
             type="pri.tau", xlim=c(0,2), ylim=c(0,3), legend=TRUE,
             legend.tau.prior=c("HN(1)", "HC(1)"))
-          
+
 # marginal posterior for the effect mu
+# warning: it takes ca. 7 min. to run this function
 plot_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                   function(t)dhalfcauchy(t, scale=1)),
             type="post.mu", xlim=c(-1.5,2), ylim=c(0,3), legend=TRUE,
-            legend.tau.prior=c("HN(1)", "HC(1)"))         
+            legend.tau.prior=c("HN(1)", "HC(1)")) 
+            }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

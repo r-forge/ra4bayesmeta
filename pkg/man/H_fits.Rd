@@ -62,6 +62,7 @@ Therefore, we generally recommend to double-check the results of the integral-ba
 }
 \examples{
 data(aa)
+\dontrun{
 # fit under Jeffreys reference heterogeneity prior
 fit1 <- bayesmeta(y = aa[ , "y"], sigma = aa[, "sigma"], 
                   mu.prior.mean = 0, mu.prior.sd = 4, 
@@ -77,6 +78,7 @@ H_fits(fit1, fit2, method = "moment")
 # Hellinger distance between the marginal posteriors for theta_2
 # (random effect parameter)
 H_fits(fit1, fit2, parameter = "theta", individual = 2)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
