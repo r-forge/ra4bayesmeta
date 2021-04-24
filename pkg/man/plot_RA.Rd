@@ -105,6 +105,9 @@ and then to apply the more flexible function \code{plot_RA_fits}
 operating on model fits of class \code{bayesmeta}.
 %%  ~~ If necessary, more details than the description above ~~
 }
+\value{
+No return value, produces graphical output only.
+}
 \references{
 Ott, M., Plummer, M., Roos, M. How vague is vague? How informative is
 informative? Reference analysis for
@@ -122,8 +125,7 @@ Bayesian meta-analysis. Manuscript revised for \emph{Statistics in Medicine}. 20
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
-\dontrun{
-# it takes a few seconds to run each of the following functions
+\donttest{# it takes a few seconds to run each of the following functions
 # prior densities
 plot_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                               function(t)dhalfcauchy(t, scale=1)),

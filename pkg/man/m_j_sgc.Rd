@@ -60,8 +60,7 @@ is \code{digits=2} and even longer for higher precision.
 \examples{
 # for aurigular acupuncture (AA) data set
 data(aa)
-\dontrun{
-# warning: it takes ca. 2 min. to run this function
+\donttest{# warning: it takes ca. 2 min. to run this function
 m_j_sgc(df=aa, digits=1)
 }
 }

@@ -134,17 +134,14 @@ especially if the desired precision is \code{digits.J=2} or even \code{digits.J=
 # for aurigular acupuncture (AA) data set with one
 # actual half-normal and the "DuMouchel" heterogeneity prior
 data(aa)
-\dontrun{
-# warning: it takes ca. 7 min. to run this function
+\donttest{# warning: it takes ca. 7 min. to run this function
 pri_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                  "DuMouchel"))
                                  }
-                                 
-# computation is faster if m_J and M_J are specified
+# computation is much faster if m_J and M_J are specified  
 pri_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                  "DuMouchel"),
            m_J = 1.35, M_J = 1.3)
-
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

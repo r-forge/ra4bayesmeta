@@ -38,7 +38,7 @@ Bodnar, O., Link, A., Arendacka, B., Possolo, A., Elster, C. (2017). Bayesian es
 }
 \references{
 Gates S, Smith LA, Foxcroft D. Auricular acupuncture for cocaine dependence. \emph{Cochrane Database of Systematic Reviews 2006},
-Issue 1. Art. No.: CD005192. \url{https://doi.org/10.1002/14651858.CD005192.pub2}
+Issue 1. Art. No.: CD005192. \doi{10.1002/14651858.CD005192.pub2}
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{

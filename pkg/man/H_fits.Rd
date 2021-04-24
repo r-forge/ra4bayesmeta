@@ -61,9 +61,8 @@ Therefore, we generally recommend to double-check the results of the integral-ba
 \code{\link{H_normal}}
 }
 \examples{
-data(aa)
-\dontrun{
-# fit under Jeffreys reference heterogeneity prior
+data(aa)  % example with running time > 5 sec.
+\donttest{ # fit under Jeffreys reference heterogeneity prior
 fit1 <- bayesmeta(y = aa[ , "y"], sigma = aa[, "sigma"], 
                   mu.prior.mean = 0, mu.prior.sd = 4, 
                   tau.prior = "Jeffreys")

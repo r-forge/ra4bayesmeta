@@ -76,8 +76,7 @@ Bayesian meta-analysis. Manuscript revised for \emph{Statistics in Medicine}. 20
 \examples{
 # for aurigular acupuncture (AA) data set 
 data(aa)
-\dontrun{
-# compute the model fits
+\donttest{# compute the model fits  % function with long running time
 # two actual half-normal heterogeneity priors
 # warning: it takes ca. 7 min. to run this function
 fits <- fit_models_RA_5bm(df=aa, tau.prior=
