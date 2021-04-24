@@ -33,7 +33,7 @@ The reference standard deviation of the data set. Non-negative real number.
 \references{
 Sorbye, S., Rue, H. (2014). Scaling intrinsic Gaussian Markov random field priors in
 spatial modelling. \emph{Spatial Statistics} \bold{8}, 39--51.
-\url{https://doi.org/10.1016/j.spasta.2013.06.004}
+\doi{10.1016/j.spasta.2013.06.004}
 %% ~put references to the literature/web site here ~
 }
 

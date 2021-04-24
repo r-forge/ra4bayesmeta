@@ -79,9 +79,9 @@ Type: Package
 
 Title: Reference Analysis for Bayesian Meta-Analysis
 
-Version: 1.0-5
+Version: 1.0-7
 
-Date: 2021-04-18
+Date: 2021-04-21
 
 Author: Manuela Ott [aut, cre], Malgorzata Roos [aut] 
 
@@ -126,8 +126,7 @@ American Statistical Association} \bold{83(402)}, 364--373.
 # auricular acupuncture (AA) data set
 data(aa)
 
-\dontrun{
-# it takes several seconds to run each of the following functions
+\donttest{# it takes several seconds to run each of the following functions
 # posterior reference analysis
 # for standard HN and HC heterogeneity priors
 # using the HN0 and J benchmarks

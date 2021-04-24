@@ -149,8 +149,7 @@ Therefore, we generally recommend to double-check the results of the integral-ba
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal heterogeneity priors
 data(aa)
-\dontrun{
-# it takes several seconds to run this function
+\donttest{# it takes several seconds to run this function
 post_RA_3bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=0.5),
                                   function(t)dhalfnormal(t, scale=1)))
 }

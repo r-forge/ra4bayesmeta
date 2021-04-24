@@ -99,8 +99,7 @@ Therefore, we generally recommend to double-check the results of the integral-ba
 \examples{
 # for aurigular acupuncture (AA) data set
 data(aa)
-\dontrun{
-# compute the model fits
+\donttest{ # compute the model fits  % this example takes > 5 sec. to run
 # actual standard half-normal and half-Cauchy heterogeneity priors
 fits <- fit_models_RA(df=aa, tau.prior=
                              list(function(t)dhalfnormal(t, scale=1),

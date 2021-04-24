@@ -149,6 +149,9 @@ and then to apply the more flexible function \code{plot_RA_fits}
 operating on model fits of class \code{bayesmeta}.
 %%  ~~ If necessary, more details than the description above ~~
 }
+\value{
+No return value, produces graphical output only.
+}
 \references{
 Ott, M., Plummer, M., Roos, M. Supplementary Material:
 How vague is vague? How informative is informative? Reference analysis for 
@@ -175,7 +178,7 @@ used for computation of the marginal posteriors.
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
-\dontrun{
+\donttest{ % examples with long running times
 # prior densities
 # warning: it takes ca. 8 min. to run this function
 # (computation is much faster if m_J and M_J are specified)

@@ -45,19 +45,19 @@ are identical to the estimates used in Lambert et al. (2005).
 %vague? A simulation study of the impact of the use of vague prior distributions in
 %MCMC using WinBUGS. \emph{Statistics in Medicine} \bold{24(15)}, 2401--2428.
 %\url{https://doi.org/10.1002/sim.2112}
-Senn, S. (2007). Trying to be precise about vagueness. \emph{Statistics in Medicine}, \bold{26}, 1417--1430. \url{https://doi.org/10.1002/sim.2639}
+Senn, S. (2007). Trying to be precise about vagueness. \emph{Statistics in Medicine}, \bold{26}, 1417--1430. \doi{10.1002/sim.2639}
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
 }
 \references{
 Kozyrskyj, A., Klassen, T. P., Moffatt, M., Harvey K. (2000).
 Short-course antibiotics for acute otitis media.
 \emph{Cochrane Database of Systematic Reviews}, Issue 2, Art. No.: CD001095.
-\url{https://doi.org/10.1002/14651858.CD001095}
+\doi{10.1002/14651858.CD001095}
 
 Lambert, P., Sutton, A., Burton, P., Abrams, K., Jones, D. (2005). How vague is
 vague? A simulation study of the impact of the use of vague prior distributions in
 MCMC using WinBUGS. \emph{Statistics in Medicine} \bold{24(15)}, 2401--2428.
-\url{https://doi.org/10.1002/sim.2112}
+\doi{10.1002/sim.2112}
 %Senn, S. (2007). Trying to be precise about vagueness. \emph{Statistics in Medicine}, \bold{26}, 1417--1430. \url{https://doi.org/10.1002/sim.2639}
 %%  ~~ possibly secondary sources and usages ~~
 }

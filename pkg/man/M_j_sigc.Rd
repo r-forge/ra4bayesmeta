@@ -65,8 +65,7 @@ the optimal parameter value may be larger than \code{upper}.
 \examples{
 # for aurigular acupuncture (AA) data set
 data(aa)
-\dontrun{
-# warning: it takes ca. 2 min. to run this function
+\donttest{# warning: it takes ca. 2 min. to run this function
 M_j_sigc(df=aa, digits=1)
 }
 }

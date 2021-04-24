@@ -119,6 +119,9 @@ in Ott et al. (2021, Section 3.4) and its Supplementary Material (Section 2.5) a
 can be computed using the functions \code{fit_models_RA} and \code{fit_models_RA_5bm},
 respectively.
 }
+\value{
+No return value, produces graphical output only.
+}
 \references{
 Ott, M., Plummer, M., Roos, M. How vague is vague? How informative is
 informative? Reference analysis for
@@ -136,7 +139,7 @@ Bayesian meta-analysis. Revised for \emph{Statistics in Medicine}. 2021.
 # for aurigular acupuncture (AA) data set with two
 # actual half-normal and half-Cauchy heterogeneity priors
 data(aa)
-\dontrun{
+\donttest{  % running time > 5 sec.
 # compute the model fits
 fits <- fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                             function(t)dhalfcauchy(t, scale=1)))

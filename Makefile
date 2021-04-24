@@ -12,7 +12,7 @@ build:
 	$R CMD build pkg
 
 check: build
-	_R_CHECK_FORCE_SUGGESTS_=FALSE $R CMD check ${PKG}_${VERSION}.tar.gz
+	_R_CHECK_FORCE_SUGGESTS_=FALSE $R CMD check --as-cran ${PKG}_${VERSION}.tar.gz
 	@cd ${PKG}.Rcheck; nwarn=`grep -c "^Warning" ${PKG}-Ex.Rout`; \
 	if [ $$nwarn -gt 0 ]; then echo "\n\tWARNING: $$nwarn" \
         "warning(s) thrown when running examples,\n" \

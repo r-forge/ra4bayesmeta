@@ -172,8 +172,7 @@ in the \code{bayesmeta} function.
 # for aurigular acupuncture (AA) data set with one
 # actual half-normal and the "DuMouchel" heterogeneity prior
 data(aa)
-\dontrun{
-# warning: it takes ca. 7 min. to run this function
+\donttest{# warning: it takes ca. 7 min. to run this function
 fit_models_RA_5bm(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1),
                                         "DuMouchel"))
                                     

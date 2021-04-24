@@ -106,12 +106,9 @@ for the anti-conservative benchmark prior.
 }
 \examples{
 # for aurigular acupuncture (AA) data set 
-data(aa)
-# one actual half-normal prior
-fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=1)))
-\dontrun{
+data(aa)  % example with running time > 5 sec.
+\donttest{# one actual half-normal and the "DuMouchel" heterogeneity prior
 # it takes a few seconds to run this function
-# one actual half-normal and the "DuMouchel" heterogeneity prior
 fit_models_RA(df=aa, tau.prior=list(function(t)dhalfnormal(t, scale=0.5),
                                     "DuMouchel"))
                                     }
